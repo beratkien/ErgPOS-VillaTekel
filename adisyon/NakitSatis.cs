@@ -16,23 +16,25 @@ namespace adisyon
     {
         decimal tt_tutar;
         private ucSatis _ucsatis;
-        public NakitSatis(decimal t_tutar, ucSatis ucsatis)
+        public string tip;
+        public NakitSatis(decimal t_tutar, ucSatis ucsatis, string _tip)
         {
            
             InitializeComponent();
             tt_tutar = t_tutar;
             _ucsatis = ucsatis;
+            tip = _tip;
         }
         public  bool _nakit;
         private void NakitSatis_Load(object sender, EventArgs e)
         {
-            //MessageBox.Show(_nakit.ToString());
             OdenenTutar = 0m;
             ParaUstu = 0m;
             btnSimdiKapat.Visible = false;
             lblSure.Text = "";
             guna2TextBox1.PlaceholderText = "0,00";
             lblIslemTutar.Text = $"İŞLEM TUTARI: {tt_tutar} TL";
+            lblTip.Text = $"ÖDEME TİPİ:\n {tip}";
 
         }
         int süre = int.Parse(ConfigurationManager.AppSettings["timer1"]);
@@ -41,7 +43,7 @@ namespace adisyon
         {
             if (string.IsNullOrEmpty(guna2TextBox1.Text))
                 return;
-            if(!decimal.TryParse(guna2TextBox1.Text, out decimal girilenTutar))
+            if(!decimal.TryParse(guna2TextBox1.Text, out decimal girilenTutar) || girilenTutar <= 0)
             {
                 template.ShowMessageInfo("Lütfen geçerli bir değer girin.", this);
                 return;

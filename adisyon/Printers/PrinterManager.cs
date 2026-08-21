@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
 
 namespace adisyon.Printers
@@ -10,7 +9,7 @@ namespace adisyon.Printers
         private readonly string _printerName;
 
         public PrinterManager()
-            : this(ConfigurationManager.AppSettings["ReceiptPrinterName"])
+            : this(ReceiptPrinter.GetSelectedPrinterName())
         {
         }
 
@@ -25,21 +24,26 @@ namespace adisyon.Printers
             string firmaAdi,
             string telefon,
             IEnumerable<ReceiptLine> lines,
-            string odemeTipi,
-            decimal odenen,
+            decimal nakitTutar,
+            decimal kartTutar,
             decimal kalan,
             decimal paraUstu,
             string altYazi)
         {
             if (lines == null)
-                throw new ArgumentNullException("lines");
+                throw new ArgumentNullException(nameof(lines));
+
+            ReceiptPrinter.EnsureSelectedPrinter();
 
             if (string.IsNullOrWhiteSpace(_printerName))
-                throw new InvalidOperationException("ReceiptPrinterName tanımlı değil.");
+                return;
+                //throw new InvalidOperationException("Fiş yazıcısı seçilmedi.");
 
             ReceiptBuilder builder = new ReceiptBuilder();
+            decimal toplam = 0m;
 
             builder.Title(firmaAdi);
+
             if (!string.IsNullOrWhiteSpace(telefon))
                 builder.Phone(telefon);
 
@@ -47,8 +51,6 @@ namespace adisyon.Printers
             builder.Date(tarih);
             builder.ReceiptNo(fisNo);
             builder.Line();
-
-            decimal toplam = 0m;
 
             foreach (ReceiptLine line in lines)
             {
@@ -62,8 +64,11 @@ namespace adisyon.Printers
 
             builder.Total(toplam);
 
-            if (!string.IsNullOrWhiteSpace(odemeTipi))
-                builder.Payment(odemeTipi, odenen);
+            if (nakitTutar > 0)
+                builder.Payment("NAKİT", nakitTutar);
+
+            if (kartTutar > 0)
+                builder.Payment("KART", kartTutar);
 
             if (kalan > 0)
                 builder.Payment("KALAN", kalan);

@@ -21,7 +21,31 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_2584111E1CA04F4E919B18373F51BE6F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_2A272324269A4F4FA7F0B043C9BBB23F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_46E58AA2DE8C4B93A77586E3078E61B2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_733A3420C8684419A284DE7FAF732CDD"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9DBC14F80E8441C1BEFF7EEB8AA1F70B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -33,7 +57,19 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C7B15E26C49D42CA87D11F07534697B5"
+        "MsmKey" = "8:_CC6D517532EDCB60B738EA65C137D696"
+        "OwnerKey" = "8:_46E58AA2DE8C4B93A77586E3078E61B2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CD3F856DEE2C4760A94B7B0A9020A398"
+        "OwnerKey" = "8:_CC6D517532EDCB60B738EA65C137D696"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DB687084629D4C318347BEA4E6C7F9EA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -45,8 +81,38 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_FBE49C02C13E4019AA2B8E6FF45D27A3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_05574BFF6EB54F4E9942E2DF322F8B98"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9DBC14F80E8441C1BEFF7EEB8AA1F70B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_46E58AA2DE8C4B93A77586E3078E61B2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_CC6D517532EDCB60B738EA65C137D696"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_CD3F856DEE2C4760A94B7B0A9020A398"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -187,6 +253,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2584111E1CA04F4E919B18373F51BE6F"
+            {
+            "SourcePath" = "8:..\\adisyon\\bin\\Debug\\adisyon.exe.config"
+            "TargetName" = "8:adisyon.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_4343F2781EBE4CEA896C906C9C22A83A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2A272324269A4F4FA7F0B043C9BBB23F"
             {
             "AssemblyRegister" = "3:1"
@@ -201,6 +287,88 @@
                     }
                 }
             "SourcePath" = "8:..\\adisyon\\bin\\Debug\\Guna.UI2.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_4343F2781EBE4CEA896C906C9C22A83A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_46E58AA2DE8C4B93A77586E3078E61B2"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ErgPosGuncelleyici, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_46E58AA2DE8C4B93A77586E3078E61B2"
+                    {
+                    "Name" = "8:ErgPosGuncelleyici.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\ErgPosGuncelleyici\\bin\\Debug\\ErgPosGuncelleyici.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_4343F2781EBE4CEA896C906C9C22A83A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_733A3420C8684419A284DE7FAF732CDD"
+            {
+            "SourcePath" = "8:..\\ErgPosGuncelleyici\\bin\\Debug\\Newtonsoft.Json.xml"
+            "TargetName" = "8:Newtonsoft.Json.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_4343F2781EBE4CEA896C906C9C22A83A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9DBC14F80E8441C1BEFF7EEB8AA1F70B"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_9DBC14F80E8441C1BEFF7EEB8AA1F70B"
+                    {
+                    "Name" = "8:Newtonsoft.Json.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\ErgPosGuncelleyici\\bin\\Debug\\Newtonsoft.Json.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_4343F2781EBE4CEA896C906C9C22A83A"
@@ -249,10 +417,72 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C7B15E26C49D42CA87D11F07534697B5"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CC6D517532EDCB60B738EA65C137D696"
             {
-            "SourcePath" = "8:..\\adisyon\\bin\\Debug\\adisyon.exe.config"
-            "TargetName" = "8:adisyon.exe.config"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:TRUE"
+            "AssemblyAsmDisplayName" = "8:System.IO.Compression.FileSystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_CC6D517532EDCB60B738EA65C137D696"
+                    {
+                    "Name" = "8:System.IO.Compression.FileSystem.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.IO.Compression.FileSystem.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_4343F2781EBE4CEA896C906C9C22A83A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CD3F856DEE2C4760A94B7B0A9020A398"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:TRUE"
+            "AssemblyAsmDisplayName" = "8:System.IO.Compression, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_CD3F856DEE2C4760A94B7B0A9020A398"
+                    {
+                    "Name" = "8:System.IO.Compression.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.IO.Compression.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_4343F2781EBE4CEA896C906C9C22A83A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DB687084629D4C318347BEA4E6C7F9EA"
+            {
+            "SourcePath" = "8:..\\ErgPosGuncelleyici\\bin\\Debug\\ErgPosGuncelleyici.exe.config"
+            "TargetName" = "8:ErgPosGuncelleyici.exe.config"
             "Tag" = "8:"
             "Folder" = "8:_4343F2781EBE4CEA896C906C9C22A83A"
             "Condition" = "8:"
@@ -275,6 +505,26 @@
             "TargetName" = "8:ikon.ico"
             "Tag" = "8:"
             "Folder" = "8:_1FDCE34115694E91B5EB26FD30C8D93C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FBE49C02C13E4019AA2B8E6FF45D27A3"
+            {
+            "SourcePath" = "8:..\\ErgPosGuncelleyici\\bin\\Debug\\ErgPosGuncelleyici.pdb"
+            "TargetName" = "8:ErgPosGuncelleyici.pdb"
+            "Tag" = "8:"
+            "Folder" = "8:_4343F2781EBE4CEA896C906C9C22A83A"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -357,7 +607,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:ErgPOS"
         "ProductCode" = "8:{4CBDFA15-5356-4EF1-8549-E1B414973CC1}"
-        "PackageCode" = "8:{56FCBBF6-495B-4FD6-A674-9F86A9FAC8C0}"
+        "PackageCode" = "8:{CA539CAC-6FEE-4252-B3D8-397F0AA5DF8F}"
         "UpgradeCode" = "8:{3913594C-0557-4CC4-B7AD-F19FF5B401D3}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"

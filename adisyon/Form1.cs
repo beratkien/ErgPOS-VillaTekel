@@ -1,4 +1,5 @@
-﻿using Guna.UI2.WinForms;
+﻿using adisyon.Models;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,6 +13,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Schema;
+using System.Net.Http;
+using System.Web;
 
 namespace adisyon
 {
@@ -24,8 +27,10 @@ namespace adisyon
         int width = int.Parse(ConfigurationManager.AppSettings["solPanelWidth"]);
         int height = int.Parse(ConfigurationManager.AppSettings["ustPanelHeight"]);
         private ucSatis _ucsatis;
-        private void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
         {
+            lblSürüm.Text = $"V: {AppVersion.CurrentVersion}";
+            _ = GuncellemeKontrolEt();
             this.Size = new Size(Convert.ToInt32(ConfigurationManager.AppSettings["size"]), this.Height);
             width = int.Parse(ConfigurationManager.AppSettings["solPanelWidth"]);
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -41,6 +46,97 @@ namespace adisyon
             // guna2DragControl1.SetDrag(ustPanel);
         }
 
+        private async Task GuncellemeKontrolEt()
+        {
+
+            try
+            {
+                //googleya istek atma
+                HttpClient client = new HttpClient();
+                
+                HttpRequestMessage req = new HttpRequestMessage(HttpMethod.Get, "https://www.google.com");
+                HttpResponseMessage res = await client.SendAsync(req);
+                lblInternet.Text = "Bağlantı : Var";
+
+
+            }
+            catch (Exception)
+            {
+
+                lblInternet.Text = "Bağlantı : Yok";
+                return;
+            }
+            UpdateInfo update = null;
+           
+            update  = await UpdateManager.CheckForUpdate();
+            
+            if (update == null)
+                return;
+
+            if (!Version.TryParse(
+                    AppVersion.CurrentVersion,
+                    out Version current))
+                return;
+
+            if (!Version.TryParse(
+                    update.Version,
+                    out Version latest))
+                return;
+
+            if (latest <= current)
+                return;
+
+            DialogResult result =
+                template.ShowMessageQuestion(
+                    "Yeni ErgPOS sürümü bulundu.\n\n" +
+                    "Mevcut sürüm: " +
+                    current + "\n" +
+                    "Yeni sürüm: " +
+                    latest + "\n\n" +
+                    update.Notes +
+                    "\n\nGüncellemek ister misiniz?",
+                     this.FindForm()
+
+                );
+
+            if (result ==
+                DialogResult.Yes)
+            {
+                GuncelleyiciyiBaslat(
+                    update.DownloadUrl
+                );
+            }
+        }
+
+        private void GuncelleyiciyiBaslat(
+    string downloadUrl)
+        {
+            string updater =
+                System.IO.Path.Combine(
+                    Application.StartupPath,
+                    "ErgPOSGuncelleyici.exe"
+                );
+
+            if (!System.IO.File.Exists(updater))
+            {
+                MessageBox.Show(
+                    "Güncelleme programı bulunamadı.",
+                    "ErgPOS",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+
+                return;
+            }
+
+            System.Diagnostics.Process.Start(
+                updater,
+                "\"" + downloadUrl + "\""
+            );
+
+            Application.Exit();
+        }
+        //güncelleme sonrası yeni eklenenler çıkmıyor!!!!
         private void anaPanel_Paint(object sender, PaintEventArgs e)
         {
 
@@ -174,6 +270,11 @@ namespace adisyon
         }
 
         private void FrmAnaSayfa_Shown(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ustPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

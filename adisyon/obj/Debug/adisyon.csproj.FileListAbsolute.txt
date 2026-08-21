@@ -19,4 +19,6 @@ C:\Users\ggolg\source\repos\adisyon\adisyon\obj\Debug\adisyon.ucKategoriler.reso
 C:\Users\ggolg\source\repos\adisyon\adisyon\obj\Debug\adisyon.ucRaporlar.resources
 C:\Users\ggolg\source\repos\adisyon\adisyon\obj\Debug\adisyon.ucSatisFis.resources
 C:\Users\ggolg\source\repos\adisyon\adisyon\obj\Debug\adisyon.ucStokHareketleri.resources
+C:\Users\ggolg\source\repos\adisyon\adisyon\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ggolg\source\repos\adisyon\adisyon\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ggolg\source\repos\adisyon\adisyon\obj\Debug\adisyon.exe.config

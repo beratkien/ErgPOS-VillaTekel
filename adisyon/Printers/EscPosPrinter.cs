@@ -80,7 +80,8 @@ namespace adisyon.Printers
                 return;
 
             if (!OpenPrinter(_printerName, out IntPtr hPrinter, IntPtr.Zero))
-                throw new Exception("Yazıcı açılamadı.");
+                return;
+                //throw new Exception("Yazıcı açılamadı.");
 
             DOCINFO di = new DOCINFO
             {
@@ -91,6 +92,7 @@ namespace adisyon.Printers
             if (!StartDocPrinter(hPrinter, 1, di))
             {
                 ClosePrinter(hPrinter);
+                return;
                 throw new Exception("Print Job başlatılamadı.");
             }
 

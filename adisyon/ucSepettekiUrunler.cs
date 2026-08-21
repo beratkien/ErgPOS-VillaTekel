@@ -55,6 +55,7 @@ namespace adisyon
             this.Width = this.Parent.Width - 7;
             if (s_urun.Adet == 1)
                 btnAzalt.Enabled = false;
+            //lblS_UrunName.Width = this.Width;
         }
 
         private void lblS_UrunFiyat_Click(object sender, EventArgs e)

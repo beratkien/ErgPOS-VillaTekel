@@ -34,15 +34,15 @@
             this.urunAlaniPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.sagPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.lblkalan = new System.Windows.Forms.Label();
+            this.btnSatissizIslem = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnNakit = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblToplamTutar = new System.Windows.Forms.Label();
+            this.btnKart = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnTemizle = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2VScrollBar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblToplamTutar = new System.Windows.Forms.Label();
             this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnYeniSepet = new Guna.UI2.WinForms.Guna2TileButton();
-            this.btnSatissizIslem = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnTemizle = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnKart = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnNakit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label2 = new System.Windows.Forms.Label();
             this.sagPanel.SuspendLayout();
             this.SuspendLayout();
@@ -112,15 +112,15 @@
             this.sagPanel.BorderColor = System.Drawing.Color.White;
             this.sagPanel.Controls.Add(this.lblkalan);
             this.sagPanel.Controls.Add(this.guna2VScrollBar1);
-            this.sagPanel.Controls.Add(this.lblToplamTutar);
             this.sagPanel.Controls.Add(this.guna2TileButton1);
-            this.sagPanel.Controls.Add(this.btnYeniSepet);
             this.sagPanel.Controls.Add(this.btnSatissizIslem);
-            this.sagPanel.Controls.Add(this.btnTemizle);
-            this.sagPanel.Controls.Add(this.btnKart);
-            this.sagPanel.Controls.Add(this.btnNakit);
+            this.sagPanel.Controls.Add(this.btnYeniSepet);
             this.sagPanel.Controls.Add(this.flowLayoutPanel1);
+            this.sagPanel.Controls.Add(this.btnNakit);
             this.sagPanel.Controls.Add(this.label2);
+            this.sagPanel.Controls.Add(this.btnKart);
+            this.sagPanel.Controls.Add(this.lblToplamTutar);
+            this.sagPanel.Controls.Add(this.btnTemizle);
             this.sagPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.sagPanel.Location = new System.Drawing.Point(1139, 0);
             this.sagPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -132,13 +132,97 @@
             // 
             this.lblkalan.AutoSize = true;
             this.lblkalan.BackColor = System.Drawing.Color.Transparent;
-            this.lblkalan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblkalan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblkalan.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblkalan.Location = new System.Drawing.Point(5, 639);
+            this.lblkalan.Location = new System.Drawing.Point(8, 646);
             this.lblkalan.Name = "lblkalan";
-            this.lblkalan.Size = new System.Drawing.Size(68, 17);
+            this.lblkalan.Size = new System.Drawing.Size(58, 15);
             this.lblkalan.TabIndex = 10;
             this.lblkalan.Text = "KALAN :";
+            // 
+            // btnSatissizIslem
+            // 
+            this.btnSatissizIslem.BorderRadius = 10;
+            this.btnSatissizIslem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSatissizIslem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSatissizIslem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSatissizIslem.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSatissizIslem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSatissizIslem.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnSatissizIslem.ForeColor = System.Drawing.Color.White;
+            this.btnSatissizIslem.Location = new System.Drawing.Point(212, 677);
+            this.btnSatissizIslem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSatissizIslem.Name = "btnSatissizIslem";
+            this.btnSatissizIslem.Size = new System.Drawing.Size(204, 86);
+            this.btnSatissizIslem.TabIndex = 7;
+            this.btnSatissizIslem.Text = "SATIŞSIZ İŞLEM";
+            this.btnSatissizIslem.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            // 
+            // btnNakit
+            // 
+            this.btnNakit.BorderRadius = 10;
+            this.btnNakit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNakit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNakit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNakit.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNakit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNakit.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.btnNakit.ForeColor = System.Drawing.Color.White;
+            this.btnNakit.Location = new System.Drawing.Point(6, 769);
+            this.btnNakit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNakit.Name = "btnNakit";
+            this.btnNakit.Size = new System.Drawing.Size(204, 86);
+            this.btnNakit.TabIndex = 4;
+            this.btnNakit.Text = "NAKİT";
+            this.btnNakit.Click += new System.EventHandler(this.btnNakit_Click);
+            // 
+            // lblToplamTutar
+            // 
+            this.lblToplamTutar.AutoSize = true;
+            this.lblToplamTutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblToplamTutar.ForeColor = System.Drawing.Color.Blue;
+            this.lblToplamTutar.Location = new System.Drawing.Point(24, 608);
+            this.lblToplamTutar.Name = "lblToplamTutar";
+            this.lblToplamTutar.Size = new System.Drawing.Size(115, 25);
+            this.lblToplamTutar.TabIndex = 3;
+            this.lblToplamTutar.Text = "TOPLAM :";
+            // 
+            // btnKart
+            // 
+            this.btnKart.BorderColor = System.Drawing.Color.DimGray;
+            this.btnKart.BorderRadius = 10;
+            this.btnKart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKart.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKart.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.btnKart.ForeColor = System.Drawing.Color.White;
+            this.btnKart.Location = new System.Drawing.Point(212, 769);
+            this.btnKart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnKart.Name = "btnKart";
+            this.btnKart.Size = new System.Drawing.Size(204, 86);
+            this.btnKart.TabIndex = 5;
+            this.btnKart.Text = "KART";
+            this.btnKart.Click += new System.EventHandler(this.btnKart_Click);
+            // 
+            // btnTemizle
+            // 
+            this.btnTemizle.BorderRadius = 10;
+            this.btnTemizle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTemizle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTemizle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTemizle.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTemizle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTemizle.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.btnTemizle.ForeColor = System.Drawing.Color.White;
+            this.btnTemizle.Location = new System.Drawing.Point(6, 677);
+            this.btnTemizle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(204, 86);
+            this.btnTemizle.TabIndex = 6;
+            this.btnTemizle.Text = "TEMİZLE";
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // guna2VScrollBar1
             // 
@@ -161,17 +245,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(507, 482);
             this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // lblToplamTutar
-            // 
-            this.lblToplamTutar.AutoSize = true;
-            this.lblToplamTutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblToplamTutar.ForeColor = System.Drawing.Color.Blue;
-            this.lblToplamTutar.Location = new System.Drawing.Point(19, 609);
-            this.lblToplamTutar.Name = "lblToplamTutar";
-            this.lblToplamTutar.Size = new System.Drawing.Size(115, 25);
-            this.lblToplamTutar.TabIndex = 3;
-            this.lblToplamTutar.Text = "TOPLAM :";
             // 
             // guna2TileButton1
             // 
@@ -206,79 +279,6 @@
             this.btnYeniSepet.TabIndex = 8;
             this.btnYeniSepet.Text = "Yeni sepet";
             this.btnYeniSepet.Click += new System.EventHandler(this.btnYeniSepet_Click);
-            // 
-            // btnSatissizIslem
-            // 
-            this.btnSatissizIslem.BorderRadius = 10;
-            this.btnSatissizIslem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSatissizIslem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSatissizIslem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSatissizIslem.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSatissizIslem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSatissizIslem.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.btnSatissizIslem.ForeColor = System.Drawing.Color.White;
-            this.btnSatissizIslem.Location = new System.Drawing.Point(209, 670);
-            this.btnSatissizIslem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSatissizIslem.Name = "btnSatissizIslem";
-            this.btnSatissizIslem.Size = new System.Drawing.Size(204, 86);
-            this.btnSatissizIslem.TabIndex = 7;
-            this.btnSatissizIslem.Text = "SATIŞSIZ İŞLEM";
-            this.btnSatissizIslem.Click += new System.EventHandler(this.guna2GradientButton1_Click);
-            // 
-            // btnTemizle
-            // 
-            this.btnTemizle.BorderRadius = 10;
-            this.btnTemizle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTemizle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTemizle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTemizle.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTemizle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTemizle.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.btnTemizle.ForeColor = System.Drawing.Color.White;
-            this.btnTemizle.Location = new System.Drawing.Point(3, 670);
-            this.btnTemizle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTemizle.Name = "btnTemizle";
-            this.btnTemizle.Size = new System.Drawing.Size(204, 86);
-            this.btnTemizle.TabIndex = 6;
-            this.btnTemizle.Text = "TEMİZLE";
-            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
-            // 
-            // btnKart
-            // 
-            this.btnKart.BorderColor = System.Drawing.Color.DimGray;
-            this.btnKart.BorderRadius = 10;
-            this.btnKart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnKart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnKart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnKart.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnKart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnKart.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.btnKart.ForeColor = System.Drawing.Color.White;
-            this.btnKart.Location = new System.Drawing.Point(209, 762);
-            this.btnKart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnKart.Name = "btnKart";
-            this.btnKart.Size = new System.Drawing.Size(204, 86);
-            this.btnKart.TabIndex = 5;
-            this.btnKart.Text = "KART";
-            this.btnKart.Click += new System.EventHandler(this.btnKart_Click);
-            // 
-            // btnNakit
-            // 
-            this.btnNakit.BorderRadius = 10;
-            this.btnNakit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNakit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNakit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNakit.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNakit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNakit.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.btnNakit.ForeColor = System.Drawing.Color.White;
-            this.btnNakit.Location = new System.Drawing.Point(3, 762);
-            this.btnNakit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnNakit.Name = "btnNakit";
-            this.btnNakit.Size = new System.Drawing.Size(204, 86);
-            this.btnNakit.TabIndex = 4;
-            this.btnNakit.Text = "NAKİT";
-            this.btnNakit.Click += new System.EventHandler(this.btnNakit_Click);
             // 
             // label2
             // 

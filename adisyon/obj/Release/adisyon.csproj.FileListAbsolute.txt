@@ -19,3 +19,4 @@ C:\Users\ggolg\source\repos\adisyon\adisyon\obj\Release\adisyon.csproj.CoreCompi
 C:\Users\ggolg\source\repos\adisyon\adisyon\obj\Release\adisyon.csproj.Up2Date
 C:\Users\ggolg\source\repos\adisyon\adisyon\obj\Release\adisyon.exe
 C:\Users\ggolg\source\repos\adisyon\adisyon\obj\Release\adisyon.pdb
+C:\Users\ggolg\source\repos\adisyon\adisyon\obj\Release\adisyon.exe.config

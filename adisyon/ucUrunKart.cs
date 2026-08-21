@@ -58,6 +58,7 @@ namespace adisyon
             guna2Panel1.BorderColor = Color.LightGray;
             guna2Panel1.FillColor = Color.White;
             guna2Panel1.ShadowDecoration.Enabled = true;
+            lblUrunIsim.Width = this.Width;
         }
 
         private void clicked()

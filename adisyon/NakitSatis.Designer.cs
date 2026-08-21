@@ -51,6 +51,7 @@
             this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
+            this.lblTip = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // guna2TextBox1
@@ -97,7 +98,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 192);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 31);
+            this.label1.Size = new System.Drawing.Size(232, 39);
             this.label1.TabIndex = 2;
             this.label1.Text = "PARA ÜSTÜ :";
             // 
@@ -113,7 +114,7 @@
             this.lblSure.ForeColor = System.Drawing.Color.White;
             this.lblSure.Location = new System.Drawing.Point(14, 242);
             this.lblSure.Name = "lblSure";
-            this.lblSure.Size = new System.Drawing.Size(47, 24);
+            this.lblSure.Size = new System.Drawing.Size(60, 29);
             this.lblSure.TabIndex = 3;
             this.lblSure.Text = "süre";
             // 
@@ -158,7 +159,7 @@
             this.lblIslemTutar.ForeColor = System.Drawing.Color.White;
             this.lblIslemTutar.Location = new System.Drawing.Point(12, 24);
             this.lblIslemTutar.Name = "lblIslemTutar";
-            this.lblIslemTutar.Size = new System.Drawing.Size(217, 31);
+            this.lblIslemTutar.Size = new System.Drawing.Size(272, 39);
             this.lblIslemTutar.TabIndex = 6;
             this.lblIslemTutar.Text = "İŞLEM TUTARI :";
             // 
@@ -370,12 +371,24 @@
             this.guna2Button14.Text = "<";
             this.guna2Button14.Click += new System.EventHandler(this.guna2Button14_Click);
             // 
+            // lblTip
+            // 
+            this.lblTip.AutoSize = true;
+            this.lblTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTip.ForeColor = System.Drawing.Color.White;
+            this.lblTip.Location = new System.Drawing.Point(628, 9);
+            this.lblTip.Name = "lblTip";
+            this.lblTip.Size = new System.Drawing.Size(132, 25);
+            this.lblTip.TabIndex = 20;
+            this.lblTip.Text = "ÖDEME TİPİ:";
+            // 
             // NakitSatis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(794, 718);
+            this.Controls.Add(this.lblTip);
             this.Controls.Add(this.guna2Button14);
             this.Controls.Add(this.guna2Button13);
             this.Controls.Add(this.guna2Button12);
@@ -430,5 +443,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button12;
         private Guna.UI2.WinForms.Guna2Button guna2Button13;
         private Guna.UI2.WinForms.Guna2Button guna2Button14;
+        public System.Windows.Forms.Label lblTip;
     }
 }

@@ -1,0 +1,13 @@
+C:\Users\ggolg\source\repos\adisyon\ErgPosGuncelleyici\bin\Debug\ErgPosGuncelleyici.exe.config
+C:\Users\ggolg\source\repos\adisyon\ErgPosGuncelleyici\bin\Debug\ErgPosGuncelleyici.exe
+C:\Users\ggolg\source\repos\adisyon\ErgPosGuncelleyici\bin\Debug\ErgPosGuncelleyici.pdb
+C:\Users\ggolg\source\repos\adisyon\ErgPosGuncelleyici\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ggolg\source\repos\adisyon\ErgPosGuncelleyici\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ggolg\source\repos\adisyon\ErgPosGuncelleyici\obj\Debug\ErgPosGuncelleyici.csproj.AssemblyReference.cache
+C:\Users\ggolg\source\repos\adisyon\ErgPosGuncelleyici\obj\Debug\ErgPosGuncelleyici.Form1.resources
+C:\Users\ggolg\source\repos\adisyon\ErgPosGuncelleyici\obj\Debug\ErgPosGuncelleyici.Properties.Resources.resources
+C:\Users\ggolg\source\repos\adisyon\ErgPosGuncelleyici\obj\Debug\ErgPosGuncelleyici.csproj.GenerateResource.cache
+C:\Users\ggolg\source\repos\adisyon\ErgPosGuncelleyici\obj\Debug\ErgPosGuncelleyici.csproj.CoreCompileInputs.cache
+C:\Users\ggolg\source\repos\adisyon\ErgPosGuncelleyici\obj\Debug\ErgPosGu.C7FD7223.Up2Date
+C:\Users\ggolg\source\repos\adisyon\ErgPosGuncelleyici\obj\Debug\ErgPosGuncelleyici.exe
+C:\Users\ggolg\source\repos\adisyon\ErgPosGuncelleyici\obj\Debug\ErgPosGuncelleyici.pdb

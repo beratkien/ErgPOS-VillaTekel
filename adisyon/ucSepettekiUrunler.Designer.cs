@@ -41,10 +41,9 @@
             // 
             this.lblS_UrunFiyat.AutoSize = true;
             this.lblS_UrunFiyat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblS_UrunFiyat.Location = new System.Drawing.Point(4, 64);
-            this.lblS_UrunFiyat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblS_UrunFiyat.Location = new System.Drawing.Point(5, 79);
             this.lblS_UrunFiyat.Name = "lblS_UrunFiyat";
-            this.lblS_UrunFiyat.Size = new System.Drawing.Size(38, 17);
+            this.lblS_UrunFiyat.Size = new System.Drawing.Size(45, 20);
             this.lblS_UrunFiyat.TabIndex = 0;
             this.lblS_UrunFiyat.Text = "Fiyat";
             this.lblS_UrunFiyat.Click += new System.EventHandler(this.lblS_UrunFiyat_Click);
@@ -53,10 +52,9 @@
             // 
             this.lblS_UrunName.AutoEllipsis = true;
             this.lblS_UrunName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblS_UrunName.Location = new System.Drawing.Point(4, 15);
-            this.lblS_UrunName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblS_UrunName.Location = new System.Drawing.Point(5, 18);
             this.lblS_UrunName.Name = "lblS_UrunName";
-            this.lblS_UrunName.Size = new System.Drawing.Size(231, 14);
+            this.lblS_UrunName.Size = new System.Drawing.Size(308, 30);
             this.lblS_UrunName.TabIndex = 1;
             this.lblS_UrunName.Text = "İsim";
             // 
@@ -64,10 +62,9 @@
             // 
             this.lblS_UrunTutar.AutoSize = true;
             this.lblS_UrunTutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblS_UrunTutar.Location = new System.Drawing.Point(4, 89);
-            this.lblS_UrunTutar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblS_UrunTutar.Location = new System.Drawing.Point(5, 110);
             this.lblS_UrunTutar.Name = "lblS_UrunTutar";
-            this.lblS_UrunTutar.Size = new System.Drawing.Size(42, 17);
+            this.lblS_UrunTutar.Size = new System.Drawing.Size(48, 20);
             this.lblS_UrunTutar.TabIndex = 3;
             this.lblS_UrunTutar.Text = "Tutar";
             // 
@@ -75,10 +72,9 @@
             // 
             this.lblS_UrunAdet.AutoSize = true;
             this.lblS_UrunAdet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblS_UrunAdet.Location = new System.Drawing.Point(4, 39);
-            this.lblS_UrunAdet.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblS_UrunAdet.Location = new System.Drawing.Point(5, 48);
             this.lblS_UrunAdet.Name = "lblS_UrunAdet";
-            this.lblS_UrunAdet.Size = new System.Drawing.Size(37, 17);
+            this.lblS_UrunAdet.Size = new System.Drawing.Size(43, 20);
             this.lblS_UrunAdet.TabIndex = 4;
             this.lblS_UrunAdet.Text = "Adet";
             // 
@@ -91,11 +87,11 @@
             this.btnAzalt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAzalt.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnAzalt.ForeColor = System.Drawing.Color.White;
-            this.btnAzalt.Location = new System.Drawing.Point(357, 43);
-            this.btnAzalt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAzalt.Location = new System.Drawing.Point(476, 53);
+            this.btnAzalt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAzalt.Name = "btnAzalt";
             this.btnAzalt.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnAzalt.Size = new System.Drawing.Size(37, 37);
+            this.btnAzalt.Size = new System.Drawing.Size(49, 46);
             this.btnAzalt.TabIndex = 5;
             this.btnAzalt.Text = "-";
             this.btnAzalt.Click += new System.EventHandler(this.btnAzalt_Click);
@@ -109,11 +105,11 @@
             this.btnArttir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnArttir.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnArttir.ForeColor = System.Drawing.Color.White;
-            this.btnArttir.Location = new System.Drawing.Point(357, 2);
-            this.btnArttir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnArttir.Location = new System.Drawing.Point(476, 2);
+            this.btnArttir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnArttir.Name = "btnArttir";
             this.btnArttir.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnArttir.Size = new System.Drawing.Size(37, 37);
+            this.btnArttir.Size = new System.Drawing.Size(49, 46);
             this.btnArttir.TabIndex = 6;
             this.btnArttir.Text = "+";
             this.btnArttir.Click += new System.EventHandler(this.btnArttir_Click);
@@ -128,18 +124,18 @@
             this.btnSil.FillColor = System.Drawing.Color.Red;
             this.btnSil.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnSil.ForeColor = System.Drawing.Color.White;
-            this.btnSil.Location = new System.Drawing.Point(357, 85);
-            this.btnSil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSil.Location = new System.Drawing.Point(476, 105);
+            this.btnSil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSil.Name = "btnSil";
             this.btnSil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnSil.Size = new System.Drawing.Size(37, 37);
+            this.btnSil.Size = new System.Drawing.Size(49, 46);
             this.btnSil.TabIndex = 7;
             this.btnSil.Text = "X";
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // ucSepettekiUrunler
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnSil);
@@ -149,9 +145,9 @@
             this.Controls.Add(this.lblS_UrunTutar);
             this.Controls.Add(this.lblS_UrunName);
             this.Controls.Add(this.lblS_UrunFiyat);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ucSepettekiUrunler";
-            this.Size = new System.Drawing.Size(404, 123);
+            this.Size = new System.Drawing.Size(539, 151);
             this.Load += new System.EventHandler(this.ucSepettekiUrunler_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
